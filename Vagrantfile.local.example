@@ -1,0 +1,7 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.require_plugin "vagrant-vmware-fusion"
+
+settings[:box] = "precise64"
+settings[:box_url] = "http://files.vagrantup.com/precise64_vmware.box"

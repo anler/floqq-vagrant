@@ -1,0 +1,53 @@
+{
+    "base_packages": ["bash-completion", "libssl-dev", "make", "swig", "libxml2", "libxslt-dev"],
+    "packages": ["gettext", "libjpeg62", "libjpeg62-dev", "zlib1g-dev", "libfreetype6", "libfreetype6-dev"],
+    "pip_python_packages": {
+        "transifex-client": "0.8",
+        "nose": "1.2.1",
+        "rednose": "",
+        "PIL": "1.1.7",
+        "Sphinx": "",
+        "httpie": "",
+        "mock": "",
+        "pycolors": "",
+        "raven": ""
+    },
+    "npm_packages": {
+        "grunt-cli": "",
+        "bower": ""
+    },
+    "nodejs": {
+        "install_method": "source",
+        "version": "0.10.15"
+    },
+    "gae": {
+        "version": "1.7.5"
+    },
+    "transifex": {
+        "host": "https://www.transifex.com",
+        "user": "<username>",
+        "password": "<password>",
+        "applications": []
+    },
+    "flobot": {
+        "name": "floqq_deploy",
+        "version": "1.1",
+        "applications": ["api", "web"],
+        "config": {
+            "api": {
+                "floqq-api.settings_url": "/opt/floqq/settings/floqq-api",
+                "floqq-public.settings_url": "/opt/floqq/settings/floqq-public",
+                "security.secure_settings": ""
+            },
+            "web": {
+                "floqq-testing.settings_url": "/opt/floqq/settings/floqq-testing",
+                "floqq-web.settings_url": "/opt/floqq/settings/floqq-web"
+            }
+        }
+    },
+    "github": {
+        "api": "git@github.com:api.git",
+        "web": "git@github.com:web.git",
+        "settings": "git@github.com:settings.git"
+    }
+}
